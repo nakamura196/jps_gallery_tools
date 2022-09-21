@@ -5,4 +5,6 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://nakamura196.github.io',
                 'git_url': 'https://github.com/nakamura196/jps_gallery_tools',
                 'lib_path': 'jps_gallery_tools'},
-  'syms': {'jps_gallery_tools.core': {'jps_gallery_tools.core.foo': ('core.html#foo', 'jps_gallery_tools/core.py')}}}
+  'syms': { 'jps_gallery_tools.core': { 'jps_gallery_tools.core.bar': ('core.html#bar', 'jps_gallery_tools/core.py'),
+                                        'jps_gallery_tools.core.foo': ('core.html#foo', 'jps_gallery_tools/core.py'),
+                                        'jps_gallery_tools.core.say_hello': ('core.html#say_hello', 'jps_gallery_tools/core.py')}}}
