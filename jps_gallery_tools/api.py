@@ -50,13 +50,15 @@ class Media(Component):
     def __init__(self, type, title, source):
         self.item = {
             "imgType": type,
+            "cover": None,
+            "sourceUrl": None,
             "title": {
                 "ja": title
             },
             "source": {
                 "ja": source
             },
-            "contentsRightsType": "incr",
+            "contentsRightsType": "various",
         }
 
 class IIIF(Media):
@@ -70,8 +72,20 @@ class IIIF(Media):
         item["infoJsonUrl"] = infoJsonUrl
 
 class UrlImage(Media):
+    """
+    URLを指定して表示する画像に関するクラス
+    """
 
     def __init__(self, url, title, source, thumbnailUrl=None):
+        """
+        初期化
+
+        Parameters:
+        * `url` - 画像URL
+        * `title` - 日本語のタイトル
+        * `source` - 日本語の出典
+        * `thumbnailUrl` - サムネイルURL
+        """
         super().__init__("URL", title, source)
 
         item = self.item
@@ -202,9 +216,30 @@ class JPSGalleryClient(Component):
 
     
 
-    def setTag(self, tag):
+    def addTag(self, tag):
+        '''
+        タグを追加します。
+
+        Parameters:
+        * `tag` - タグ
+        '''
         g = self.g
         g["workspaceTags"].append(tag)
 
     def setImage(self, image):
         self.g["image"] = image.export()
+
+    def saveJsonl(self, path):
+        '''
+        JSONLファイルの保存
+
+        Parameters:
+        * `path` - 出力先のパス
+        '''
+
+        arr = []
+        arr.append(json.dumps(self.g, ensure_ascii=False))
+
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, mode='w') as f:
+            f.write("\n".join(arr))
