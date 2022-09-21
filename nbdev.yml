@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "jps_gallery_tools"
+  site-url: "https://nakamura196.github.io/jps_gallery_tools"
+  description: ""
+  repo-branch: main
+  repo-url: "https://github.com/nakamura196/jps_gallery_tools"
