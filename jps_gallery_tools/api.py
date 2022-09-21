@@ -14,7 +14,7 @@ class Component:
         '''
         エクスポート
 
-        Returns:
+        Returns:  
         * dict containing representation of the gallery
         '''
         return self.item
@@ -23,9 +23,9 @@ class Component:
         '''
         メタデータの設定
 
-        Parameters:
-        * `key` - title, description, etc...
-        * `lang` - one of 言語, eg: 'ja', 'en', 'yomi'
+        Parameters:  
+        * `key` - title, description, etc...  
+        * `lang` - one of 言語, eg: 'ja', 'en', 'yomi'  
         * `value` - 値
         '''
         item = self.item
@@ -38,7 +38,7 @@ class Component:
         '''
         JSONファイルの保存
 
-        Parameters:
+        Parameters:  
         * `path` - 出力先のパス
         '''
         os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -80,10 +80,10 @@ class UrlImage(Media):
         """
         初期化
 
-        Parameters:
-        * `url` - 画像URL
-        * `title` - 日本語のタイトル
-        * `source` - 日本語の出典
+        Parameters:  
+        * `url` - 画像URL  
+        * `title` - 日本語のタイトル  
+        * `source` - 日本語の出典  
         * `thumbnailUrl` - サムネイルURL
         """
         super().__init__("URL", title, source)
@@ -97,30 +97,12 @@ class UrlImage(Media):
 
 
 class Part(Component):
-    
-    configType = {
-        # "text": "jps-curation-text",
-        # "list": "jps-curation-list",
-    }
 
-    def __init__(self, type): # , viewType=None
+    def __init__(self, type):
         item = {}
         self.item = item
         item["cpid"] = "a"
-
-        configType = self.configType
-
-        type = configType[type] if type in configType else type
         item["type"] = type
-        
-        '''
-        if type == "jps-curation-list":
-
-            if viewType:
-                item["viewType"] = viewType
-
-            item["parts"] = []
-        '''
 
     def insertText(self, lang, value):
         '''
@@ -145,9 +127,9 @@ class Part(Component):
         '''
         opsに要素を追加します。
 
-        Parameters:
-        * `key` - title, description, etc...
-        * `lang` - one of 言語, eg: 'ja', 'en', 'yomi'
+        Parameters:  
+        * `key` - title, description, etc...  
+        * `lang` - one of 言語, eg: 'ja', 'en', 'yomi'  
         * `value` - 値
         '''
         item = self.item
@@ -192,8 +174,8 @@ class ListPart(Part):
         '''
         初期化
 
-        Parameters:
-        * `viewType` - レイアウト, eg: 'tile', 'en'
+        Parameters:  
+        * `viewType` - レイアウト, eg: 'tile', 'table', etc...
         '''
         super().__init__("list") # , viewType
 
@@ -219,7 +201,7 @@ class ListExternalLinkPart(Part):
         '''
         外部リンクのURLを設定します。
 
-        Parameters:
+        Parameters:  
         * `url` - 外部リンクのURL
         '''
         self.item["url"] = url
@@ -264,7 +246,7 @@ class JPSGalleryClient(Component):
         '''
         タグを追加します。
 
-        Parameters:
+        Parameters:  
         * `tag` - タグ
         '''
         item = self.item
@@ -277,7 +259,7 @@ class JPSGalleryClient(Component):
         '''
         JSONLファイルの保存
 
-        Parameters:
+        Parameters:  
         * `path` - 出力先のパス
         '''
 
