@@ -9,6 +9,8 @@ import os
 import json
 
 class Component:
+
+    item = {}
     
     def export(self):
         '''
@@ -44,6 +46,21 @@ class Component:
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, 'w') as f:
             json.dump(self.item, f, ensure_ascii=False, indent=2)
+
+    def test(self):
+        print("test")
+
+    def addPart(self, part):
+        '''
+        パーツの追加
+        
+        Parameters:
+        * `part` - パーツ        
+        '''
+        item = self.item
+        if 'parts' not in item:
+            item['parts'] = []
+        item["parts"].append(part.export())  
 
 class Media(Component):
 
@@ -158,10 +175,7 @@ class Part(Component):
         item[key][lang] = value
 
     def setUrl(self, url):
-        self.item["url"] = url
-
-    def addPart(self, part):
-        self.item["parts"].append(part.export())    
+        self.item["url"] = url   
 
     def setImage(self, image):
         self.item["image"] = image.export()
