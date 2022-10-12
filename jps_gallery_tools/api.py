@@ -79,7 +79,7 @@ class Media(Component):
         }
 
 class IIIF(Media):
-    def __init__(self, manifestUrl, infoJsonUrl, title, source):
+    def __init__(self, manifestUrl, infoJsonUrl, title, source, xywh=None):
         super().__init__("IIIF", title, source)
 
         item = self.item
@@ -87,6 +87,13 @@ class IIIF(Media):
         item["sourceUrl"] = None
         item["manifestUrl"] = manifestUrl
         item["infoJsonUrl"] = infoJsonUrl
+
+        if xywh is not None:
+            spl = xywh.split(',')
+            item["x"] = int(spl[0])
+            item["y"] = int(spl[1])
+            item["w"] = int(spl[2])
+            item["h"] = int(spl[3])
 
 class UrlImage(Media):
     """
