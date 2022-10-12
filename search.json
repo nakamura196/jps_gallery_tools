@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Japan Search Gallery Tools",
+    "section": "",
+    "text": "pip install jps_gallery_tools"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "Japan Search Gallery Tools",
+    "section": "How to use",
+    "text": "How to use\nSee the documentation for full details of the Japan Search Gallery API Client.\n\nfrom jps_gallery_tools.api import JPSGalleryClient\ngallery = JPSGalleryClient()\n\n\ngallery.setMetadata('title', 'ja', '日本語タイトル')\ngallery.setMetadata('summary', 'ja', '日本語の概要')\n\n\nfrom pprint import pprint\npprint(gallery.export())\n\n{'curationType': 'GALLERY',\n 'edit': {'action': 'CREATE',\n          'date': 1663722096491,\n          'orgId': 'jpsws',\n          'userId': 'system'},\n 'id': 'aaa',\n 'parts': [],\n 'permission': {'level': 'ADMIN', 'publicationLevel': 'WORKSPACE'},\n 'primaryTerm': 1,\n 'responsibility': {},\n 'seqNo': 0,\n 'summary': {'ja': '日本語の概要'},\n 'title': {'ja': '日本語タイトル'},\n 'version': 1,\n 'workspace': 'abc',\n 'workspaceTags': []}"
+  },
+  {
+    "objectID": "api.html",
+    "href": "api.html",
+    "title": "Japan Search Gallery client",
+    "section": "",
+    "text": "source"
+  },
+  {
+    "objectID": "api.html#ギャラリーのメタデータの設定",
+    "href": "api.html#ギャラリーのメタデータの設定",
+    "title": "Japan Search Gallery client",
+    "section": "ギャラリーのメタデータの設定",
+    "text": "ギャラリーのメタデータの設定\nギャラリーのメタデータを設定します。\n\nsource\n\nComponent.setMetadata\n\n Component.setMetadata (key, lang, value)\n\nメタデータの設定\nParameters:\n* key - title, description, etc…\n* lang - one of 言語, eg: ‘ja’, ‘en’, ‘yomi’\n* value - 値\nタイトルの設定\n\ngallery.setMetadata(\"title\", \"ja\", \"日本語タイトル\")\ngallery.setMetadata(\"title\", \"en\", \"English Title\")\ngallery.setMetadata(\"title\", \"yomi\", \"にほんごのよみ\")\n\nsummaryの設定\n\ngallery.setMetadata(\"summary\", \"ja\", \"日本語の概要文\")\ngallery.setMetadata(\"summary\", \"en\", \"English Summary\")\n\nresponsibilityの設定\n\ngallery.setMetadata(\"responsibility\", \"ja\", \"中村覚\")\ngallery.setMetadata(\"responsibility\", \"en\", \"Satoru Nakamura\")\n\ntagの設定\n\nsource\n\n\nJPSGalleryClient.addTag\n\n JPSGalleryClient.addTag (tag)\n\nタグを追加します。\nParameters:\n* tag - タグ\n\ngallery.addTag(\"はじめてのタグ\")\ngallery.addTag(\"二つ目のタグ\")\n\n画像の設定\n\nsource\n\n\nUrlImage\n\n UrlImage (url, title, source, thumbnailUrl=None)\n\nURLを指定して表示する画像に関するクラス\n\nsource\n\n\nUrlImage.__init__\n\n UrlImage.__init__ (url, title, source, thumbnailUrl=None)\n\n初期化\nParameters:\n* url - 画像URL\n* title - 日本語のタイトル\n* source - 日本語の出典\n* thumbnailUrl - サムネイルURL\n\noriginal_url = \"https://blogger.googleusercontent.com/img/a/AVvXsEiTjjaWkCHeCslxeKujaQotjuR_HvhOHen7Ql7rQV8nmQl4ivLRF_CSabMY-JLJHNL-xHMe3VDyA9F-iv1RtQ2jFTk1Vnjck-veKLUZPdYqCcjzHkc8SGKb1fyZ_x8W66aTrSXQ78UN3CnyBakwwmmH_hmPKeEsTzq8J3e2zzUMylmDjCZ0LClPByBRRw=s400\"\nthumbnail_url = \"https://blogger.googleusercontent.com/img/a/AVvXsEiTjjaWkCHeCslxeKujaQotjuR_HvhOHen7Ql7rQV8nmQl4ivLRF_CSabMY-JLJHNL-xHMe3VDyA9F-iv1RtQ2jFTk1Vnjck-veKLUZPdYqCcjzHkc8SGKb1fyZ_x8W66aTrSXQ78UN3CnyBakwwmmH_hmPKeEsTzq8J3e2zzUMylmDjCZ0LClPByBRRw=s180-c\"\ntitle = \"初日の出のキャラクター\"\nsource = \"いらすとや\"\ntop_image = UrlImage(original_url, title, source, thumbnail_url)\n\n\nsource\n\n\nJPSGalleryClient.setImage\n\n JPSGalleryClient.setImage (image)\n\n\ngallery.setImage(top_image)"
+  },
+  {
+    "objectID": "api.html#パーツの追加",
+    "href": "api.html#パーツの追加",
+    "title": "Japan Search Gallery client",
+    "section": "パーツの追加",
+    "text": "パーツの追加\n\nsource\n\nListPart.__init__\n\n ListPart.__init__ (viewType)\n\n初期化\nParameters:\n* viewType - レイアウト, eg: ‘tile’, ‘table’, etc…\n\npart = ListPart(\"tile\")\n\nメタデータの追加\n\npart.setMetadata(\"title\", \"ja\", \"リストのタイトル\")\npart.setMetadata(\"title\", \"en\", \"List Title\")\n\nリストに画像の追加\n\nitem = ListExternalLinkPart()\n\n\nsource\n\n\nListExternalLinkPart.setUrl\n\n ListExternalLinkPart.setUrl (url)\n\n外部リンクのURLを設定します。\nParameters:\n* url - 外部リンクのURL\n\nitem.setUrl(\"https://www.irasutoya.com/2021/11/blog-post_91.html\")\n\nアイテムの追加\n\nsource\n\n\nComponent.addPart\n\n Component.addPart (part)\n\nパーツの追加\nParameters: * part - パーツ\n\npart.addPart(item)\n\n\npprint(part.item)\n\n{'cpid': 'a',\n 'parts': [{'cpid': 'a',\n            'type': 'jps-curation-list-external-link',\n            'url': 'https://www.irasutoya.com/2021/11/blog-post_91.html'}],\n 'title': {'en': 'List Title', 'ja': 'リストのタイトル'},\n 'type': 'list',\n 'viewType': 'tile'}"
+  },
+  {
+    "objectID": "api.html#save-json",
+    "href": "api.html#save-json",
+    "title": "Japan Search Gallery client",
+    "section": "Save json",
+    "text": "Save json\n設定した内容をjsonファイルに出力します。\n\nsource\n\nComponent.save\n\n Component.save (path)\n\nJSONファイルの保存\nParameters:\n* path - 出力先のパス\n\ngallery.save(\"tmp/gallery.json\")\n\n\nsource\n\n\nJPSGalleryClient.saveJsonl\n\n JPSGalleryClient.saveJsonl (path)\n\nJSONLファイルの保存\nParameters:\n* path - 出力先のパス\n\ngallery.saveJsonl(\"tmp/gallery.jsonl\")"
+  }
+]

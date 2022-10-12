@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Tools to interact with the Japan Search Gallery">
+
+<title>jps_gallery_tools - Japan Search Gallery client</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="jps_gallery_tools - Japan Search Gallery client">
+<meta property="og:description" content="Tools to interact with the Japan Search Gallery">
+<meta property="og:site-name" content="jps_gallery_tools">
+<meta name="twitter:title" content="jps_gallery_tools - Japan Search Gallery client">
+<meta name="twitter:description" content="Tools to interact with the Japan Search Gallery">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">jps_gallery_tools</span>
+    </a>
+  </div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Japan Search Gallery client</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Japan Search Gallery Tools</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./api.html" class="sidebar-item-text sidebar-link active">Japan Search Gallery client</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#jpsgalleryclient" id="toc-jpsgalleryclient" class="nav-link active" data-scroll-target="#jpsgalleryclient">JPSGalleryClient</a></li>
+  <li><a href="#listexternallinkpart" id="toc-listexternallinkpart" class="nav-link" data-scroll-target="#listexternallinkpart">ListExternalLinkPart</a></li>
+  <li><a href="#listpart" id="toc-listpart" class="nav-link" data-scroll-target="#listpart">ListPart</a></li>
+  <li><a href="#part" id="toc-part" class="nav-link" data-scroll-target="#part">Part</a></li>
+  <li><a href="#iiif" id="toc-iiif" class="nav-link" data-scroll-target="#iiif">IIIF</a></li>
+  <li><a href="#media" id="toc-media" class="nav-link" data-scroll-target="#media">Media</a></li>
+  <li><a href="#component" id="toc-component" class="nav-link" data-scroll-target="#component">Component</a></li>
+  <li><a href="#ギャラリーのメタデータの設定" id="toc-ギャラリーのメタデータの設定" class="nav-link" data-scroll-target="#ギャラリーのメタデータの設定">ギャラリーのメタデータの設定</a>
+  <ul class="collapse">
+  <li><a href="#component.setmetadata" id="toc-component.setmetadata" class="nav-link" data-scroll-target="#component.setmetadata">Component.setMetadata</a></li>
+  <li><a href="#jpsgalleryclient.addtag" id="toc-jpsgalleryclient.addtag" class="nav-link" data-scroll-target="#jpsgalleryclient.addtag">JPSGalleryClient.addTag</a></li>
+  <li><a href="#urlimage" id="toc-urlimage" class="nav-link" data-scroll-target="#urlimage">UrlImage</a></li>
+  <li><a href="#urlimage.__init__" id="toc-urlimage.__init__" class="nav-link" data-scroll-target="#urlimage.__init__">UrlImage.__init__</a></li>
+  <li><a href="#jpsgalleryclient.setimage" id="toc-jpsgalleryclient.setimage" class="nav-link" data-scroll-target="#jpsgalleryclient.setimage">JPSGalleryClient.setImage</a></li>
+  </ul></li>
+  <li><a href="#パーツの追加" id="toc-パーツの追加" class="nav-link" data-scroll-target="#パーツの追加">パーツの追加</a>
+  <ul class="collapse">
+  <li><a href="#listpart.__init__" id="toc-listpart.__init__" class="nav-link" data-scroll-target="#listpart.__init__">ListPart.__init__</a></li>
+  <li><a href="#listexternallinkpart.seturl" id="toc-listexternallinkpart.seturl" class="nav-link" data-scroll-target="#listexternallinkpart.seturl">ListExternalLinkPart.setUrl</a></li>
+  <li><a href="#component.addpart" id="toc-component.addpart" class="nav-link" data-scroll-target="#component.addpart">Component.addPart</a></li>
+  </ul></li>
+  <li><a href="#save-json" id="toc-save-json" class="nav-link" data-scroll-target="#save-json">Save json</a>
+  <ul class="collapse">
+  <li><a href="#component.save" id="toc-component.save" class="nav-link" data-scroll-target="#component.save">Component.save</a></li>
+  <li><a href="#jpsgalleryclient.savejsonl" id="toc-jpsgalleryclient.savejsonl" class="nav-link" data-scroll-target="#jpsgalleryclient.savejsonl">JPSGalleryClient.saveJsonl</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nakamura196/jps_gallery_tools/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Japan Search Gallery client</h1>
+</div>
+
+<div>
+  <div class="description">
+    Tools to interact with the Japan Search Gallery
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<!-- WARNING: THIS FILE WAS AUTOGENERATED! DO NOT EDIT! -->
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L230" target="_blank" style="float:right; font-size:smaller">source</a></p>
+<section id="jpsgalleryclient" class="level3">
+<h3 class="anchored" data-anchor-id="jpsgalleryclient">JPSGalleryClient</h3>
+<blockquote class="blockquote">
+<pre><code> JPSGalleryClient ()</code></pre>
+</blockquote>
+<p>Initialize self. See help(type(self)) for accurate signature.</p>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L209" target="_blank" style="float:right; font-size:smaller">source</a></p>
+</section>
+<section id="listexternallinkpart" class="level3">
+<h3 class="anchored" data-anchor-id="listexternallinkpart">ListExternalLinkPart</h3>
+<blockquote class="blockquote">
+<pre><code> ListExternalLinkPart ()</code></pre>
+</blockquote>
+<p>ListExternalLinkPart</p>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L190" target="_blank" style="float:right; font-size:smaller">source</a></p>
+</section>
+<section id="listpart" class="level3">
+<h3 class="anchored" data-anchor-id="listpart">ListPart</h3>
+<blockquote class="blockquote">
+<pre><code> ListPart (viewType)</code></pre>
+</blockquote>
+<p>リストパーツ</p>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L123" target="_blank" style="float:right; font-size:smaller">source</a></p>
+</section>
+<section id="part" class="level3">
+<h3 class="anchored" data-anchor-id="part">Part</h3>
+<blockquote class="blockquote">
+<pre><code> Part (type)</code></pre>
+</blockquote>
+<p>Initialize self. See help(type(self)) for accurate signature.</p>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L81" target="_blank" style="float:right; font-size:smaller">source</a></p>
+</section>
+<section id="iiif" class="level3">
+<h3 class="anchored" data-anchor-id="iiif">IIIF</h3>
+<blockquote class="blockquote">
+<pre><code> IIIF (manifestUrl, infoJsonUrl, title, source, xywh=None)</code></pre>
+</blockquote>
+<p>Initialize self. See help(type(self)) for accurate signature.</p>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L65" target="_blank" style="float:right; font-size:smaller">source</a></p>
+</section>
+<section id="media" class="level3">
+<h3 class="anchored" data-anchor-id="media">Media</h3>
+<blockquote class="blockquote">
+<pre><code> Media (type, title, source)</code></pre>
+</blockquote>
+<p>Initialize self. See help(type(self)) for accurate signature.</p>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L11" target="_blank" style="float:right; font-size:smaller">source</a></p>
+</section>
+<section id="component" class="level3">
+<h3 class="anchored" data-anchor-id="component">Component</h3>
+<blockquote class="blockquote">
+<pre><code> Component ()</code></pre>
+</blockquote>
+<p>Initialize self. See help(type(self)) for accurate signature.</p>
+<p>First import the JPSGalleryClient class.</p>
+<pre><code>from jps_gallery_tools.api import JPSGalleryClient</code></pre>
+<p>To initialise the JPSGalleryClient you need to provide the base url of your Omeka instance’s API.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>gallery <span class="op">=</span> JPSGalleryClient()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="ギャラリーのメタデータの設定" class="level2">
+<h2 class="anchored" data-anchor-id="ギャラリーのメタデータの設定">ギャラリーのメタデータの設定</h2>
+<p>ギャラリーのメタデータを設定します。</p>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L24" target="_blank" style="float:right; font-size:smaller">source</a></p>
+<section id="component.setmetadata" class="level3">
+<h3 class="anchored" data-anchor-id="component.setmetadata">Component.setMetadata</h3>
+<blockquote class="blockquote">
+<pre><code> Component.setMetadata (key, lang, value)</code></pre>
+</blockquote>
+<p>メタデータの設定</p>
+<p>Parameters:<br>
+* <code>key</code> - title, description, etc…<br>
+* <code>lang</code> - one of 言語, eg: ‘ja’, ‘en’, ‘yomi’<br>
+* <code>value</code> - 値</p>
+<p>タイトルの設定</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>gallery.setMetadata(<span class="st">"title"</span>, <span class="st">"ja"</span>, <span class="st">"日本語タイトル"</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>gallery.setMetadata(<span class="st">"title"</span>, <span class="st">"en"</span>, <span class="st">"English Title"</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>gallery.setMetadata(<span class="st">"title"</span>, <span class="st">"yomi"</span>, <span class="st">"にほんごのよみ"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>summaryの設定</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>gallery.setMetadata(<span class="st">"summary"</span>, <span class="st">"ja"</span>, <span class="st">"日本語の概要文"</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>gallery.setMetadata(<span class="st">"summary"</span>, <span class="st">"en"</span>, <span class="st">"English Summary"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>responsibilityの設定</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>gallery.setMetadata(<span class="st">"responsibility"</span>, <span class="st">"ja"</span>, <span class="st">"中村覚"</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>gallery.setMetadata(<span class="st">"responsibility"</span>, <span class="st">"en"</span>, <span class="st">"Satoru Nakamura"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>tagの設定</p>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L266" target="_blank" style="float:right; font-size:smaller">source</a></p>
+</section>
+<section id="jpsgalleryclient.addtag" class="level3">
+<h3 class="anchored" data-anchor-id="jpsgalleryclient.addtag">JPSGalleryClient.addTag</h3>
+<blockquote class="blockquote">
+<pre><code> JPSGalleryClient.addTag (tag)</code></pre>
+</blockquote>
+<p>タグを追加します。</p>
+<p>Parameters:<br>
+* <code>tag</code> - タグ</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>gallery.addTag(<span class="st">"はじめてのタグ"</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>gallery.addTag(<span class="st">"二つ目のタグ"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>画像の設定</p>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L98" target="_blank" style="float:right; font-size:smaller">source</a></p>
+</section>
+<section id="urlimage" class="level3">
+<h3 class="anchored" data-anchor-id="urlimage">UrlImage</h3>
+<blockquote class="blockquote">
+<pre><code> UrlImage (url, title, source, thumbnailUrl=None)</code></pre>
+</blockquote>
+<p>URLを指定して表示する画像に関するクラス</p>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L103" target="_blank" style="float:right; font-size:smaller">source</a></p>
+</section>
+<section id="urlimage.__init__" class="level3">
+<h3 class="anchored" data-anchor-id="urlimage.__init__">UrlImage.__init__</h3>
+<blockquote class="blockquote">
+<pre><code> UrlImage.__init__ (url, title, source, thumbnailUrl=None)</code></pre>
+</blockquote>
+<p>初期化</p>
+<p>Parameters:<br>
+* <code>url</code> - 画像URL<br>
+* <code>title</code> - 日本語のタイトル<br>
+* <code>source</code> - 日本語の出典<br>
+* <code>thumbnailUrl</code> - サムネイルURL</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>original_url <span class="op">=</span> <span class="st">"https://blogger.googleusercontent.com/img/a/AVvXsEiTjjaWkCHeCslxeKujaQotjuR_HvhOHen7Ql7rQV8nmQl4ivLRF_CSabMY-JLJHNL-xHMe3VDyA9F-iv1RtQ2jFTk1Vnjck-veKLUZPdYqCcjzHkc8SGKb1fyZ_x8W66aTrSXQ78UN3CnyBakwwmmH_hmPKeEsTzq8J3e2zzUMylmDjCZ0LClPByBRRw=s400"</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>thumbnail_url <span class="op">=</span> <span class="st">"https://blogger.googleusercontent.com/img/a/AVvXsEiTjjaWkCHeCslxeKujaQotjuR_HvhOHen7Ql7rQV8nmQl4ivLRF_CSabMY-JLJHNL-xHMe3VDyA9F-iv1RtQ2jFTk1Vnjck-veKLUZPdYqCcjzHkc8SGKb1fyZ_x8W66aTrSXQ78UN3CnyBakwwmmH_hmPKeEsTzq8J3e2zzUMylmDjCZ0LClPByBRRw=s180-c"</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>title <span class="op">=</span> <span class="st">"初日の出のキャラクター"</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>source <span class="op">=</span> <span class="st">"いらすとや"</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>top_image <span class="op">=</span> UrlImage(original_url, title, source, thumbnail_url)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L276" target="_blank" style="float:right; font-size:smaller">source</a></p>
+</section>
+<section id="jpsgalleryclient.setimage" class="level3">
+<h3 class="anchored" data-anchor-id="jpsgalleryclient.setimage">JPSGalleryClient.setImage</h3>
+<blockquote class="blockquote">
+<pre><code> JPSGalleryClient.setImage (image)</code></pre>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>gallery.setImage(top_image)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="パーツの追加" class="level2">
+<h2 class="anchored" data-anchor-id="パーツの追加">パーツの追加</h2>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L194" target="_blank" style="float:right; font-size:smaller">source</a></p>
+<section id="listpart.__init__" class="level3">
+<h3 class="anchored" data-anchor-id="listpart.__init__">ListPart.__init__</h3>
+<blockquote class="blockquote">
+<pre><code> ListPart.__init__ (viewType)</code></pre>
+</blockquote>
+<p>初期化</p>
+<p>Parameters:<br>
+* <code>viewType</code> - レイアウト, eg: ‘tile’, ‘table’, etc…</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>part <span class="op">=</span> ListPart(<span class="st">"tile"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>メタデータの追加</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>part.setMetadata(<span class="st">"title"</span>, <span class="st">"ja"</span>, <span class="st">"リストのタイトル"</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>part.setMetadata(<span class="st">"title"</span>, <span class="st">"en"</span>, <span class="st">"List Title"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>リストに画像の追加</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>item <span class="op">=</span> ListExternalLinkPart()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L221" target="_blank" style="float:right; font-size:smaller">source</a></p>
+</section>
+<section id="listexternallinkpart.seturl" class="level3">
+<h3 class="anchored" data-anchor-id="listexternallinkpart.seturl">ListExternalLinkPart.setUrl</h3>
+<blockquote class="blockquote">
+<pre><code> ListExternalLinkPart.setUrl (url)</code></pre>
+</blockquote>
+<p>外部リンクのURLを設定します。</p>
+<p>Parameters:<br>
+* <code>url</code> - 外部リンクのURL</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>item.setUrl(<span class="st">"https://www.irasutoya.com/2021/11/blog-post_91.html"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>アイテムの追加</p>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L53" target="_blank" style="float:right; font-size:smaller">source</a></p>
+</section>
+<section id="component.addpart" class="level3">
+<h3 class="anchored" data-anchor-id="component.addpart">Component.addPart</h3>
+<blockquote class="blockquote">
+<pre><code> Component.addPart (part)</code></pre>
+</blockquote>
+<p>パーツの追加</p>
+<p>Parameters: * <code>part</code> - パーツ</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>part.addPart(item)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>pprint(part.item)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'cpid': 'a',
+ 'parts': [{'cpid': 'a',
+            'type': 'jps-curation-list-external-link',
+            'url': 'https://www.irasutoya.com/2021/11/blog-post_91.html'}],
+ 'title': {'en': 'List Title', 'ja': 'リストのタイトル'},
+ 'type': 'list',
+ 'viewType': 'tile'}</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="save-json" class="level2">
+<h2 class="anchored" data-anchor-id="save-json">Save json</h2>
+<p>設定した内容をjsonファイルに出力します。</p>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L39" target="_blank" style="float:right; font-size:smaller">source</a></p>
+<section id="component.save" class="level3">
+<h3 class="anchored" data-anchor-id="component.save">Component.save</h3>
+<blockquote class="blockquote">
+<pre><code> Component.save (path)</code></pre>
+</blockquote>
+<p>JSONファイルの保存</p>
+<p>Parameters:<br>
+* <code>path</code> - 出力先のパス</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>gallery.save(<span class="st">"tmp/gallery.json"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><a href="https://github.com/nakamura196/jps_gallery_tools/blob/main/jps_gallery_tools/api.py#L279" target="_blank" style="float:right; font-size:smaller">source</a></p>
+</section>
+<section id="jpsgalleryclient.savejsonl" class="level3">
+<h3 class="anchored" data-anchor-id="jpsgalleryclient.savejsonl">JPSGalleryClient.saveJsonl</h3>
+<blockquote class="blockquote">
+<pre><code> JPSGalleryClient.saveJsonl (path)</code></pre>
+</blockquote>
+<p>JSONLファイルの保存</p>
+<p>Parameters:<br>
+* <code>path</code> - 出力先のパス</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>gallery.saveJsonl(<span class="st">"tmp/gallery.jsonl"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
