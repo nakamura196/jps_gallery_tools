@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "api.html",
+    "href": "api.html",
+    "title": "Japan Search Gallery client",
+    "section": "",
+    "text": "source"
+  },
+  {
+    "objectID": "api.html#ギャラリーのメタデータの設定",
+    "href": "api.html#ギャラリーのメタデータの設定",
+    "title": "Japan Search Gallery client",
+    "section": "ギャラリーのメタデータの設定",
+    "text": "ギャラリーのメタデータの設定\nギャラリーのメタデータを設定します。\n\nsource\n\nComponent.setLangMetadata\n\n Component.setLangMetadata (key, lang, value)\n\nメタデータの設定\nParameters:\n* key - title, description, etc…\n* lang - one of 言語, eg: ‘ja’, ‘en’, ‘yomi’\n* value - 値\nタイトルの設定\n\ngallery.setLangMetadata(\"title\", \"ja\", \"日本語タイトル\")\ngallery.setLangMetadata(\"title\", \"en\", \"English Title\")\ngallery.setLangMetadata(\"title\", \"yomi\", \"にほんごのよみ\")\n\nsummaryの設定\n\ngallery.setLangMetadata(\"summary\", \"ja\", \"日本語の概要文\")\ngallery.setLangMetadata(\"summary\", \"en\", \"English Summary\")\n\nresponsibilityの設定\n\ngallery.setLangMetadata(\"responsibility\", \"ja\", \"中村覚\")\ngallery.setLangMetadata(\"responsibility\", \"en\", \"Satoru Nakamura\")\n\ntagの設定\n\nsource\n\n\nJpsCuration.addTag\n\n JpsCuration.addTag (tag)\n\nタグを追加します。\nParameters:\n* tag - タグ\n\ngallery.addTag(\"はじめてのタグ\")\ngallery.addTag(\"二つ目のタグ\")\n\n画像の設定\n\nsource\n\n\nJpsCurationUrlImage\n\n JpsCurationUrlImage (url, title, source, thumbnailUrl=None)\n\nURLを指定して表示する画像に関するクラス\n\noriginal_url = \"https://blogger.googleusercontent.com/img/a/AVvXsEiTjjaWkCHeCslxeKujaQotjuR_HvhOHen7Ql7rQV8nmQl4ivLRF_CSabMY-JLJHNL-xHMe3VDyA9F-iv1RtQ2jFTk1Vnjck-veKLUZPdYqCcjzHkc8SGKb1fyZ_x8W66aTrSXQ78UN3CnyBakwwmmH_hmPKeEsTzq8J3e2zzUMylmDjCZ0LClPByBRRw=s400\"\nthumbnail_url = \"https://blogger.googleusercontent.com/img/a/AVvXsEiTjjaWkCHeCslxeKujaQotjuR_HvhOHen7Ql7rQV8nmQl4ivLRF_CSabMY-JLJHNL-xHMe3VDyA9F-iv1RtQ2jFTk1Vnjck-veKLUZPdYqCcjzHkc8SGKb1fyZ_x8W66aTrSXQ78UN3CnyBakwwmmH_hmPKeEsTzq8J3e2zzUMylmDjCZ0LClPByBRRw=s180-c\"\ntitle = \"初日の出のキャラクター\"\nsource = \"いらすとや\"\ntop_image = JpsCurationUrlImage(original_url, title, source, thumbnail_url)\n\n\nsource\n\n\nPart.setImage\n\n Part.setImage (image)\n\n\ngallery.setImage(top_image)"
+  },
+  {
+    "objectID": "api.html#パーツの追加",
+    "href": "api.html#パーツの追加",
+    "title": "Japan Search Gallery client",
+    "section": "パーツの追加",
+    "text": "パーツの追加\n\nsource\n\nJpsCurationList\n\n JpsCurationList (viewType)\n\nリストパーツ\n\npart = JpsCurationList(\"tile\")\n\nメタデータの追加\n\npart.setLangMetadata(\"title\", \"ja\", \"リストのタイトル\")\npart.setLangMetadata(\"title\", \"en\", \"List Title\")\n\nリストに画像の追加\n\nitem = JpsCurationListExternalLink()\n\n\nsource\n\n\nPart.setUrl\n\n Part.setUrl (url)\n\n外部リンクのURLを設定します。\nParameters:\n* url - 外部リンクのURL\n\nitem.setUrl(\"https://www.irasutoya.com/2021/11/blog-post_91.html\")\n\nアイテムの追加\n\nsource\n\n\nComponent.addPart\n\n Component.addPart (part)\n\nパーツの追加\nParameters: * part - パーツ\n\npart.addPart(item)"
+  },
+  {
+    "objectID": "api.html#save-json",
+    "href": "api.html#save-json",
+    "title": "Japan Search Gallery client",
+    "section": "Save json",
+    "text": "Save json\n設定した内容をjsonファイルに出力します。\n\nsource\n\nJpsCuration.save\n\n JpsCuration.save (path)\n\nJSONファイルの保存\nParameters:\n* path - 出力先のパス\n\ngallery.save(\"tmp/gallery.json\")\n\n\nsource\n\n\nJpsCuration.saveJsonl\n\n JpsCuration.saveJsonl (path)\n\nJSONLファイルの保存\nParameters:\n* path - 出力先のパス\n\ngallery.saveJsonl(\"tmp/gallery.jsonl\")\n\n\nsource\n\n\nJpsCuration.encode\n\n JpsCuration.encode (curationType='NOTE')\n\nBase64エンコード\nReturns:\n* str containing Base64 encoded representation of the gallery"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Japan Search Gallery Tools",
+    "section": "",
+    "text": "pip install jps_gallery_tools"
+  },
+  {
+    "objectID": "index.html#実行例",
+    "href": "index.html#実行例",
+    "title": "Japan Search Gallery Tools",
+    "section": "実行例",
+    "text": "実行例\nGoogleColabのノートブック"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "Japan Search Gallery Tools",
+    "section": "How to use",
+    "text": "How to use\nSee the documentation for full details of the Japan Search Gallery API Client.\n\nギャラリーの作成\n\nfrom jps_gallery_tools.api import *\ngallery = JpsCuration()\n\n\ngallery.setLangMetadata('title', 'ja', 'はじめてのギャラリー')\ngallery.setLangMetadata('summary', 'ja', 'はじめてのギャラリーを作成します。')\ngallery.setLangMetadata(\"responsibility\", \"ja\", \"中村覚\")\ngallery.addTag(\"はじめて\")\ngallery.addTag(\"テスト\")\n\nトップ画像\n\noriginal_url = \"https://blogger.googleusercontent.com/img/a/AVvXsEiTjjaWkCHeCslxeKujaQotjuR_HvhOHen7Ql7rQV8nmQl4ivLRF_CSabMY-JLJHNL-xHMe3VDyA9F-iv1RtQ2jFTk1Vnjck-veKLUZPdYqCcjzHkc8SGKb1fyZ_x8W66aTrSXQ78UN3CnyBakwwmmH_hmPKeEsTzq8J3e2zzUMylmDjCZ0LClPByBRRw=s400\"\nthumbnail_url = \"https://blogger.googleusercontent.com/img/a/AVvXsEiTjjaWkCHeCslxeKujaQotjuR_HvhOHen7Ql7rQV8nmQl4ivLRF_CSabMY-JLJHNL-xHMe3VDyA9F-iv1RtQ2jFTk1Vnjck-veKLUZPdYqCcjzHkc8SGKb1fyZ_x8W66aTrSXQ78UN3CnyBakwwmmH_hmPKeEsTzq8J3e2zzUMylmDjCZ0LClPByBRRw=s180-c\"\ntitle = \"初日の出のキャラクター\"\nsource = \"いらすとや\"\ntop_image = JpsCurationUrlImage(original_url, title, source, thumbnail_url)\ngallery.setImage(top_image)\n\n\n\nテキスト\n\npart_01= JpsCurationText()\ngallery.addPart(part_01)\npart_01.addText(\"ja\", \"テキスト。テキスト。テキスト。テキスト。\")\n\n\n\nリスト\n\npart_02 = JpsCurationList(\"tile\")\npart_02.setLangMetadata(\"title\", \"ja\", \"リストのタイトル\")\npart_02.setLangMetadata(\"title\", \"en\", \"List Title\")\ngallery.addPart(part_02)\n\n4件の画像を追加\n\nfor i in range(4):\n    item = JpsCurationListExternalLink()\n    part_02.addPart(item)\n    item.setLangMetadata(\"title\", \"ja\", \"外部リンクのタイトル\")\n    item.setImage(top_image)\n\n\n\n年表\n\npart_03 = JpsCurationTimeline(1800, 2050)\ngallery.addPart(part_03)\npart_03.setLangMetadata(\"title\", \"ja\", \"年表のタイトル\")\npart_03.setLangMetadata(\"title\", \"en\", \"Timeline Title\")\n\n\npart_03_01 = JpsCurationTimepoint(\"時点のタイトル\", \"Timepoint Title\", 1877, 1877)\npart_03.addPart(part_03_01)\n\n\npart_03_01_01 = JpsCurationText()\npart_03_01.addPart(part_03_01_01)\npart_03_01_01.addText(\"ja\", \"時点のテキスト。時点のテキスト。時点のテキスト。時点のテキスト。\")\n\n\n\n地図\n\npart_04 = JpsCurationList(\"map\")\ngallery.addPart(part_04)\npart_04.setLangMetadata(\"title\", \"ja\", \"地図のタイトル\")\npart_04.setLangMetadata(\"title\", \"en\", \"Map Title\")\n\npart_04.setMetadata(\"openActionType\", \"link\")\npart_04.setMetadata(\"mapParam\", {\n    \"center\": {\n        \"lat\": 35.713736762125464,\n        \"lon\": 139.76272050237696\n    },\n    \"zoom\": 15,\n    \"mode\": \"NORMAL\"\n})\n\n\nimport copy\nfrom pprint import pprint\n\nitem_04_01 = copy.copy(item)\n\nitem_04_01.setMetadata(\"latlon\", {\n    \"lat\": 35.713333,\n    \"lon\": 139.762222\n})\npart_04.addPart(item_04_01)\n\n\n\n出力\n\ngallery.save(\"tmp/gallery.json\")\n\n\nb = gallery.encode(curationType=\"GALLERY\")\n\n\nimport IPython\nfrom IPython.display import display, HTML\n\nlang = \"ja\"\n \nhtm = HTML(f'''\\\n<div\n        class=\"jps\"\n        data-lang=\"{lang}\"\n        data-cur=\"{b}\">\n</div>\n<script src=\"https://jpsearch.go.jp/assets/js/wp.bundle.js\"></script>\n''')\n \ndisplay(htm)"
+  }
+]
