@@ -1,0 +1,1434 @@
+{
+    "id": "piqfza1o59lo9",
+    "curationType": "GALLERY",
+    "title": {
+        "ja": "ギャラリーの試作",
+        "en": "",
+        "yomi": "ぎゃらりーのしさく"
+    },
+    "summary": {
+        "ja": "東京大学「総合図書館バーチャルミュージアム」を改変して作成しています。",
+        "en": ""
+    },
+    "responsibility": {},
+    "workspaceTags": [],
+    "parts": [
+        {
+            "cpid": "a",
+            "type": "jps-curation-list",
+            "viewType": "tile",
+            "parts": [
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/226/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 2740,
+                        "x": 114,
+                        "h": 1220,
+                        "y": 252,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "1：赤門及び医科大学の一部"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "1：赤門及び医科大学の一部"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/231/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1900,
+                        "x": 430,
+                        "h": 1492,
+                        "y": 300,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "2：陸上運動会（棒飛）"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "2：陸上運動会（棒飛）"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/234/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1892,
+                        "x": 426,
+                        "h": 1484,
+                        "y": 300,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "3：図書館学生閲覧室"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "3：図書館学生閲覧室"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/238/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1920,
+                        "x": 406,
+                        "h": 1500,
+                        "y": 312,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "4：法科大学教室"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "4：法科大学教室"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/242/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1924,
+                        "x": 414,
+                        "h": 1488,
+                        "y": 304,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "5：生理学実験室"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "5：生理学実験室"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/246/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1916,
+                        "x": 418,
+                        "h": 1464,
+                        "y": 324,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "6：病理学講義室"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "6：病理学講義室"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/250/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1900,
+                        "x": 438,
+                        "h": 1500,
+                        "y": 312,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "7：薬物学教室化学実験室"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "7：薬物学教室化学実験室"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/256/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1900,
+                        "x": 442,
+                        "h": 1496,
+                        "y": 304,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "8：外科手術室"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "8：外科手術室"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/266/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1956,
+                        "x": 418,
+                        "h": 1512,
+                        "y": 304,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "9：婦人科耳鼻咽喉科及眼科外来診察所"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "9：婦人科耳鼻咽喉科及眼科外来診察所"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/270/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1972,
+                        "x": 398,
+                        "h": 1496,
+                        "y": 308,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "10：機械工学列品室"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "10：機械工学列品室"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/273/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1896,
+                        "x": 414,
+                        "h": 1504,
+                        "y": 320,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "11：造船学列品室"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "11：造船学列品室"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/281/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1924,
+                        "x": 418,
+                        "h": 1480,
+                        "y": 292,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "12：試金実験室"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "12：試金実験室"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/291/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1896,
+                        "x": 446,
+                        "h": 1496,
+                        "y": 296,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "13：植物園の一部"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "13：植物園の一部"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/299/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1904,
+                        "x": 422,
+                        "h": 1492,
+                        "y": 312,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "14：農学教室"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "14：農学教室"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/304/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1920,
+                        "x": 450,
+                        "h": 1492,
+                        "y": 320,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "15：農科大学温室"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "15：農科大学温室"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/307/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8b0089a9-66fc-4833-ab13-21d92f7f7aa4/manifest",
+                        "w": 1900,
+                        "x": 458,
+                        "h": 1476,
+                        "y": 312,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "16：養蚕室"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "16：養蚕室"
+                    }
+                }
+            ],
+            "title": {
+                "ja": "明治時代の東大を見る　－写真帖『東京帝國大學』から－",
+                "en": ""
+            }
+        },
+        {
+            "type": "jps-curation-timeline",
+            "parts": [
+                {
+                    "cpid": "1mb6hwq6yo1iu",
+                    "type": "jps-curation-timepoint",
+                    "time": {
+                        "name": {
+                            "ja": "創立",
+                            "en": ""
+                        },
+                        "start": 1877,
+                        "end": 1877,
+                        "startFraction": 0,
+                        "endFraction": 0,
+                        "labelHeight": 1
+                    },
+                    "description": {
+                        "ja": "はじめての年表",
+                        "en": ""
+                    },
+                    "parts": [
+                        {
+                            "type": "jps-curation-text",
+                            "ja": {
+                                "ops": [
+                                    {
+                                        "attributes": {
+                                            "color": "#3366cc",
+                                            "link": "https://ja.wikipedia.org/wiki/%E9%96%8B%E6%88%90%E5%AD%A6%E6%A0%A1"
+                                        },
+                                        "insert": "東京開成学校"
+                                    },
+                                    {
+                                        "attributes": {
+                                            "color": "#202122"
+                                        },
+                                        "insert": "、"
+                                    },
+                                    {
+                                        "attributes": {
+                                            "color": "#3366cc",
+                                            "link": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E5%8C%BB%E5%AD%A6%E6%A0%A1"
+                                        },
+                                        "insert": "東京医学校"
+                                    },
+                                    {
+                                        "attributes": {
+                                            "color": "#202122"
+                                        },
+                                        "insert": "への改組を経て1877年（明治10年）"
+                                    },
+                                    {
+                                        "attributes": {
+                                            "color": "#3366cc",
+                                            "link": "https://ja.wikipedia.org/wiki/4%E6%9C%8812%E6%97%A5"
+                                        },
+                                        "insert": "4月12日"
+                                    },
+                                    {
+                                        "attributes": {
+                                            "color": "#202122"
+                                        },
+                                        "insert": "に至って合同することになり、"
+                                    },
+                                    {
+                                        "attributes": {
+                                            "color": "#3366cc",
+                                            "link": "https://ja.wikipedia.org/wiki/%E6%96%87%E9%83%A8%E7%9C%81"
+                                        },
+                                        "insert": "文部省"
+                                    },
+                                    {
+                                        "attributes": {
+                                            "color": "#202122"
+                                        },
+                                        "insert": "所管の官立"
+                                    },
+                                    {
+                                        "attributes": {
+                                            "color": "#3366cc",
+                                            "link": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6_(1877-1886)"
+                                        },
+                                        "insert": "東京大学"
+                                    },
+                                    {
+                                        "attributes": {
+                                            "color": "#202122"
+                                        },
+                                        "insert": "が創設された。（Wikipediaより）"
+                                    },
+                                    {
+                                        "insert": "\n"
+                                    }
+                                ]
+                            },
+                            "en": {
+                                "ops": [
+                                    {
+                                        "insert": "\n"
+                                    }
+                                ]
+                            },
+                            "cpid": "9tyukct7u8am"
+                        }
+                    ]
+                },
+                {
+                    "cpid": "3tqlzg19xyuaz",
+                    "type": "jps-curation-timepoint",
+                    "time": {
+                        "name": {
+                            "ja": "ギャラリー作成年",
+                            "en": ""
+                        },
+                        "start": 2023,
+                        "end": 2023,
+                        "startFraction": 0,
+                        "endFraction": 0,
+                        "labelHeight": 1
+                    },
+                    "description": {
+                        "ja": "2つ目の年表"
+                    },
+                    "parts": [
+                        {
+                            "type": "jps-curation-image-annotation",
+                            "parts": [],
+                            "cpid": "1nfwq1g1p1mx8s",
+                            "initial": {
+                                "cpid": "cr7qy31iioi9m",
+                                "title": {
+                                    "ja": "テスト1",
+                                    "en": ""
+                                },
+                                "description": {
+                                    "ja": "テスト2",
+                                    "en": ""
+                                },
+                                "parts": []
+                            },
+                            "image": {
+                                "imgType": "URL",
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Yasuda_Auditorium_-_Tokyo_University_3.jpg/250px-Yasuda_Auditorium_-_Tokyo_University_3.jpg",
+                                "thumbnailUrl": null,
+                                "title": {
+                                    "ja": "wikipedia",
+                                    "en": ""
+                                },
+                                "description": {
+                                    "ja": "",
+                                    "en": ""
+                                },
+                                "cover": null,
+                                "contentsRightsType": "cc0",
+                                "contentsRights": {
+                                    "ja": "",
+                                    "en": ""
+                                },
+                                "source": {
+                                    "ja": "wikipedia",
+                                    "en": ""
+                                },
+                                "sourceUrl": null
+                            }
+                        },
+                        {
+                            "type": "jps-curation-image",
+                            "image": {
+                                "imgType": "URL",
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Yasuda_Auditorium_-_Tokyo_University_3.jpg/250px-Yasuda_Auditorium_-_Tokyo_University_3.jpg",
+                                "thumbnailUrl": null,
+                                "title": {
+                                    "ja": "wikipedia2",
+                                    "en": ""
+                                },
+                                "description": {
+                                    "ja": "",
+                                    "en": ""
+                                },
+                                "cover": null,
+                                "contentsRightsType": "cc0",
+                                "contentsRights": {
+                                    "ja": "",
+                                    "en": ""
+                                },
+                                "source": {
+                                    "ja": "wikipedia",
+                                    "en": ""
+                                },
+                                "sourceUrl": null
+                            },
+                            "caption": {
+                                "ja": "テスト3",
+                                "en": ""
+                            },
+                            "description": {
+                                "ja": "テスト4",
+                                "en": ""
+                            },
+                            "cpid": "54tg32130ss66",
+                            "layout": "right_description",
+                            "background": "grey"
+                        }
+                    ]
+                }
+            ],
+            "timeline": {
+                "start": 1800,
+                "end": 2050
+            },
+            "layout": "bar",
+            "cpid": "1dej8c5ndnrt5",
+            "title": {
+                "ja": "年表",
+                "en": ""
+            }
+        },
+        {
+            "type": "jps-curation-list",
+            "title": {
+                "ja": "地図",
+                "en": ""
+            },
+            "viewType": "map",
+            "parts": [
+                {
+                    "type": "jps-curation-list-external-link",
+                    "cpid": "9udknipsb99k",
+                    "title": {
+                        "ja": "東京大学",
+                        "en": ""
+                    },
+                    "url": "https://www.u-tokyo.ac.jp/ja/index.html",
+                    "description": {
+                        "ja": "東京大学（とうきょうだいがく、The University of Tokyo）は、東京都文京区に本部を置く日本の国立大学である。略称は東大（とうだい）。（Wikipediaより）",
+                        "en": ""
+                    },
+                    "note": {
+                        "ja": null,
+                        "en": null
+                    },
+                    "latlon": {
+                        "lat": "35.713333",
+                        "lon": "139.762222"
+                    },
+                    "image": {
+                        "imgType": "URL",
+                        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Yasuda_Auditorium_-_Tokyo_University_3.jpg/250px-Yasuda_Auditorium_-_Tokyo_University_3.jpg",
+                        "thumbnailUrl": null,
+                        "title": {
+                            "ja": "東京大学",
+                            "en": ""
+                        },
+                        "description": {
+                            "ja": "",
+                            "en": ""
+                        },
+                        "cover": null,
+                        "contentsRightsType": "cc0",
+                        "contentsRights": {
+                            "ja": "",
+                            "en": ""
+                        },
+                        "source": {
+                            "ja": "Wikipedia",
+                            "en": ""
+                        },
+                        "sourceUrl": null
+                    }
+                }
+            ],
+            "openActionType": "link",
+            "cpid": "1vsifwi1x5azrm",
+            "mapParam": {
+                "center": {
+                    "lat": 35.713736762125464,
+                    "lon": 139.76272050237696
+                },
+                "zoom": 15,
+                "mode": "NORMAL"
+            }
+        },
+        {
+            "cpid": "a",
+            "type": "jps-curation-list",
+            "viewType": "tile",
+            "parts": [
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b/manifest",
+                        "w": 3984,
+                        "x": 70788,
+                        "h": 2344,
+                        "y": 96,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "1:東大「百鬼夜行図」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "1:東大「百鬼夜行図」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/R0000010/info.json",
+                        "manifestUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/manifest.json",
+                        "w": 6624,
+                        "x": 36,
+                        "h": 4368,
+                        "y": 752,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "1:NDL「百鬼夜行絵巻」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "1:NDL「百鬼夜行絵巻」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b/manifest",
+                        "w": 3232,
+                        "x": 67548,
+                        "h": 1792,
+                        "y": 1024,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "2:東大「百鬼夜行図」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "2:東大「百鬼夜行図」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/R0000011/info.json",
+                        "manifestUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/manifest.json",
+                        "w": 3440,
+                        "x": 364,
+                        "h": 2048,
+                        "y": 4560,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "2:NDL「百鬼夜行絵巻」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "2:NDL「百鬼夜行絵巻」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b/manifest",
+                        "w": 1452,
+                        "x": 15106,
+                        "h": 1456,
+                        "y": 1276,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "3:東大「百鬼夜行図」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "3:東大「百鬼夜行図」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/R0000016/info.json",
+                        "manifestUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/manifest.json",
+                        "w": 1840,
+                        "x": 0,
+                        "h": 2272,
+                        "y": 3552,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "3:NDL「百鬼夜行絵巻」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "3:NDL「百鬼夜行絵巻」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b/manifest",
+                        "w": 1364,
+                        "x": 53274,
+                        "h": 1972,
+                        "y": 428,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "4:東大「百鬼夜行図」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "4:東大「百鬼夜行図」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/R0000021/info.json",
+                        "manifestUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/manifest.json",
+                        "w": 4000,
+                        "x": 468,
+                        "h": 3576,
+                        "y": 1448,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "4:NDL「百鬼夜行絵巻」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "4:NDL「百鬼夜行絵巻」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b/manifest",
+                        "w": 2096,
+                        "x": 54660,
+                        "h": 1576,
+                        "y": 528,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "5:東大「百鬼夜行図」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "5:東大「百鬼夜行図」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/R0000022/info.json",
+                        "manifestUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/manifest.json",
+                        "w": 4032,
+                        "x": 776,
+                        "h": 2992,
+                        "y": 3088,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "5:NDL「百鬼夜行絵巻」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "5:NDL「百鬼夜行絵巻」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b/manifest",
+                        "w": 3440,
+                        "x": 31844,
+                        "h": 2656,
+                        "y": 160,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "6:東大「百鬼夜行図」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "6:東大「百鬼夜行図」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/R0000023/info.json",
+                        "manifestUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/manifest.json",
+                        "w": 5456,
+                        "x": 440,
+                        "h": 5920,
+                        "y": 720,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "6:NDL「百鬼夜行絵巻」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "6:NDL「百鬼夜行絵巻」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b/manifest",
+                        "w": 2896,
+                        "x": 26020,
+                        "h": 2648,
+                        "y": 160,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "7:東大「百鬼夜行図」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "7:東大「百鬼夜行図」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/R0000025/info.json",
+                        "manifestUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/manifest.json",
+                        "w": 4592,
+                        "x": 108,
+                        "h": 3720,
+                        "y": 2520,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "7:NDL「百鬼夜行絵巻」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "7:NDL「百鬼夜行絵巻」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b/manifest",
+                        "w": 3456,
+                        "x": 7924,
+                        "h": 2504,
+                        "y": 400,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "8:東大「百鬼夜行図」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "8:東大「百鬼夜行図」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/R0000027/info.json",
+                        "manifestUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/manifest.json",
+                        "w": 5216,
+                        "x": 1480,
+                        "h": 5568,
+                        "y": 1216,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "8:NDL「百鬼夜行絵巻」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "8:NDL「百鬼夜行絵巻」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b/manifest",
+                        "w": 2296,
+                        "x": 5372,
+                        "h": 1256,
+                        "y": 208,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "9:東大「百鬼夜行図」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "9:東大「百鬼夜行図」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/R0000029/info.json",
+                        "manifestUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/manifest.json",
+                        "w": 3848,
+                        "x": 2028,
+                        "h": 2504,
+                        "y": 3776,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "9:NDL「百鬼夜行絵巻」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "9:NDL「百鬼夜行絵巻」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/hyakki/images/hyakki.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/fbd0479b-dbb4-4eaa-95b8-f27e1c423e4b/manifest",
+                        "w": 1388,
+                        "x": 74526,
+                        "h": 1464,
+                        "y": 1352,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "10:東大「百鬼夜行図」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "10:東大「百鬼夜行図」"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/R0000009/info.json",
+                        "manifestUrl": "https://www.dl.ndl.go.jp/api/iiif/2541003/manifest.json",
+                        "w": 2672,
+                        "x": 2772,
+                        "h": 3088,
+                        "y": 3584,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "10:NDL「百鬼夜行絵巻」"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "10:NDL「百鬼夜行絵巻」"
+                    }
+                }
+            ],
+            "title": {
+                "ja": "絵巻物を比較して見る　－百鬼夜行図から－",
+                "en": ""
+            }
+        },
+        {
+            "cpid": "a",
+            "type": "jps-curation-list",
+            "viewType": "tile",
+            "parts": [
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/56199/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2fe5f21a-fa37-4dc6-9753-755df1ef3faa/manifest",
+                        "w": 6440,
+                        "x": 300,
+                        "h": 4216,
+                        "y": 744,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "1：生捕ました三度の大地震"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "1：生捕ました三度の大地震"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/56213/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/f20d2fc7-27f8-4494-86c8-99a6cd1fbb7c/manifest",
+                        "w": 4176,
+                        "x": 312,
+                        "h": 6112,
+                        "y": 352,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "2：鯰之讎討"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "2：鯰之讎討"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/56201/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/723553d0-4a10-43fa-991c-7e46c6b6b01d/manifest",
+                        "w": 4016,
+                        "x": 360,
+                        "h": 5744,
+                        "y": 560,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "3：百一年目の日蝕"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "3：百一年目の日蝕"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/piranesi/0000-0000-2001/0000-0000-2001-0001.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/3d6550cb-2cd7-4188-96c1-4a5fdb487fed/manifest",
+                        "w": 5984,
+                        "x": 248,
+                        "h": 8064,
+                        "y": 288,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "4：ピラネージ肖像画"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "4：ピラネージ肖像画"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/piranesi/0000-0000-2023/0000-0000-2023-0411.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/38197f83-8f97-4d18-87e0-da5222ca938d/manifest",
+                        "w": 5104,
+                        "x": 232,
+                        "h": 6656,
+                        "y": 192,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "5：想像上の牢獄"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "5：想像上の牢獄"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/15295/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/f31c02e5-5f1c-4bf6-a3d0-90863ce8973f/manifest",
+                        "w": 4256,
+                        "x": 0,
+                        "h": 3352,
+                        "y": 16,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "6：膳部之事"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "6：膳部之事"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif-img/6551/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/58539ab0-8bc6-4cb1-95bb-5c28ce2749c7/manifest",
+                        "w": 3116,
+                        "x": 258,
+                        "h": 2664,
+                        "y": 224,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "7：烏琴齋雜録"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "7：烏琴齋雜録"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/ogatasiryo/A100_1649/A100_1649_0001.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/5061e0fa-b328-431f-a95e-7b417137335b/manifest",
+                        "w": 7632,
+                        "x": 0,
+                        "h": 8784,
+                        "y": 640,
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "8：救世主像"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "8：救世主像"
+                    }
+                },
+                {
+                    "note": {},
+                    "image": {
+                        "contentsRightsType": "incr",
+                        "infoJsonUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/matsunosakae/A00_6569_0001.tif/info.json",
+                        "manifestUrl": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/c416f868-754f-4fed-9974-6ba911e2c0ba/manifest",
+                        "source": {
+                            "ja": ""
+                        },
+                        "title": {
+                            "ja": "9：松乃栄"
+                        },
+                        "imgType": "IIIF"
+                    },
+                    "cpid": "a",
+                    "type": "jps-curation-list-external-link",
+                    "title": {
+                        "ja": "9：松乃栄"
+                    }
+                }
+            ],
+            "title": {
+                "ja": "総合図書館資料アラカルト",
+                "en": ""
+            }
+        }
+    ],
+    "image": {
+        "imgType": "URL",
+        "url": "https://www.lib.u-tokyo.ac.jp/sites/default/files/2020-11/100-ex1_oldlibrary.png",
+        "thumbnailUrl": "https://www.lib.u-tokyo.ac.jp/sites/default/files/2020-11/100-ex1_oldlibrary.png",
+        "title": {
+            "ja": "旧図書館",
+            "en": ""
+        },
+        "description": {
+            "ja": "",
+            "en": ""
+        },
+        "cover": null,
+        "contentsRightsType": "various",
+        "contentsRights": {
+            "ja": "",
+            "en": ""
+        },
+        "source": {
+            "ja": "東京大学",
+            "en": ""
+        },
+        "sourceUrl": null
+    },
+    "theme": "modern"
+}
